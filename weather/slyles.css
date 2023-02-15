@@ -1,0 +1,120 @@
+body {
+    background-size: 100%;
+    background-repeat: no-repeat;
+   }
+.TextCity {
+    text-align: center;
+    color: rgb(252, 252, 252);
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.startImg {
+    height: 5%;
+    width: 5%;
+    margin: 1px 0px 1px 1px;
+}
+.gradus {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.weather_0 {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Days {
+    text-align: left;
+    font-size: 30px;
+    color: white;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.block1 {
+    display:inline-block;
+    background: rgba(200, 200, 200, 0.601);
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    color: white;
+    height: 150px;
+    width: 14%;
+}
+.weather_1 {
+    height: 50px;
+    width: 50px;
+}
+.block2 {
+    display:inline-block;
+    background: rgba(255, 0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    height: 30%;
+    width: 14%;
+}
+.weather_2 {
+    height: 50px;
+    width: 50px;
+}
+.block3 {
+    display:inline-block;
+    background: rgba(255, 0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    height: 30%;
+    width: 14%;
+}
+.weather_3 {
+    height: 50px;
+    width: 50px;
+}
+.block4 {
+    display:inline-block;
+    background: rgba(255, 0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    height: 30%;
+    width: 14%;
+}
+.weather_4 {
+    height: 50px;
+    width: 50px;
+}
+.block5 {
+    display:inline-block;
+    background: rgba(255, 0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    height: 30%;
+    width: 14%;
+}
+.weather_5 {
+    height: 50px;
+    width: 50px;
+}
+.block6 {
+    display:inline-block;
+    background: rgba(255, 0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    height: 30%;
+    width: 14%;
+}
+.weather_6 {
+    height: 50px;
+    width: 50px;
+}
+.weather_7 {
+    display:inline-block;
+    background: rgba(255, 0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    height: 30%;
+    width: 14%;
+}
+.weather_7 {
+    height: 50px;
+    width: 50px;
+}
