@@ -2,59 +2,80 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viwport" content="width, instial-scale=1.0">
         <title>weather</title>
-        <link rel="stylessheet" href="styles.css">
+        <link rel="stylesheet" href="style.css">
     </head>
-    <body Background="Background.png"></bodyBackground>
+    <body background="Background.png"><br>
         <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-        <center><p class="TextCity"> Саранск </p></center>
-        <center><img class="startImg" src="Component0.png" alt="ясно"></center> <center><p class="gradus">10°</p></center>
-        <center><p class="weather_0">Солнечно</p></center>
-    <br>
-        <p class="Days">По дням</p><br>
-    <br>
+
+        <p class="textCity">Саранск</p>
+        <div class="container">
+       <img class="startImg" src="Component0.png" alt="ясно"> <p class="gradus">4°</p>
+        </div>
+       <p class="weather_0">Солнечно</p><br>
+
+       <p class="days">По дням</p><br>    
+        <div class="container_2">
         <div class="block1">
             <p>Сегодня</p><br>
-            <img class="weather_1" src="Component1.png"><br>
-            <p>10°</p>
-            <p>5°</p><br>
+            <img class="weather_1" src="Component1.png" alt="ясно"><br>
+            <p>4°</p>
         </div>
         <div class="block2">
             <p>Завтра</p><br>
-            <img class="weather_2" src="Component2.png"><br>
-            <p>19°</p>
-            <p>8°</p><br>
+            <img class="weather_2" src="Component2.png" alt="облачно"><br>
+            <p>4°</p>
         </div>
         <div class="block3">
-            <p>Ср9</p>
-            <img class="weather_3" src="Component3.png"><br>
-            <p>17°</p>
-            <p>6°</p><br>
+            <p>Ср 9</p><br>
+            <img class="weather_3" src="Component3.png" alt="облачно"><br>
+            <p>4°</p>
         </div>
         <div class="block4">
-            <p>Чт10</p>
-            <img class="weather_4" src="Component4.png"><br>
-            <p>19°</p>
-            <p>8°</p><br>
-        </div>
+            <p>Чт 10</p><br>
+            <img class="weather_4" src="Component4.png" alt="ясно"><br>
+            <p>4°</p>
+         </div>
         <div class="block5">
-            <p>Пт11</p>
-            <img class="weather_5" src="Component5.png"><br>
-            <p>14°</p>
-            <p>5°</p><br>
+            <p>Пт 11</p><br>
+            <img class="weather_5" src="Component5.png" alt="ясно"><br>
+            <p>4°</p>
         </div>
         <div class="block6">
-            <p>Сб12</p>
-            <img class="weather_6" src="Component1.png"><br>
-            <p>12°</p>
-            <p>4°</p><br>
+            <p>Сб 12</p><br>
+            <img class="weather_6" src="Component1.png" alt="ясно"><br>
+            <p>4°</p>
         </div>
         <div class="block7">
-            <p>Вс13</p>
-            <img class="weather_7" src="Component5.png"><br>
-            <p>10°</p>
-            <p>2°</p><br>
+            <p>Вс 13</p><br>
+            <img class="weather_7" src="Component5.png" alt="ясно"><br>
+            <p>4°</p>
         </div>
+        </div><br>
+        <p class="info">Подробности</p>
+       <div class="container_3">
+            <div class="info_1">По ощущениям<br> <p class="num_1">3°</p></div>
+            <div class="info_2">Влажность<br><p class="num_2">73%</p></div>
+            <div class="info_3">Давление<br><p class="num_3">750.00мм</p></div>
+            <div class="info_4">Ветер<br>
+                <div class="wind">
+                <img class="direction" src="Frame.png"><p class="num_4">4м\с</p>
+                </div>
+            </div>
+            <div class="info_5">Видимость<br><p class="num_5">10км</p></div>
+        <div class="container_4">
+            <div class="info_6">Восход
+                <div class="sunrise">
+                    <img class="sun_1" scr="Frame_1.png"><p class="time_1">7:23</p>
+                </div>
+            </div>
+            <div class="info_7">Закат
+                <div class="sunset">
+                    <img class="sun_2" scr="Frame_2.png"><p class="time_2">18:42</p>
+                </div>
+            </div>
+        </div>
+       </div> 
     </body>
 </html>
