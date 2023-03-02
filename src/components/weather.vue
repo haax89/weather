@@ -1,50 +1,45 @@
 <template>
     <body>
-        <div class="backgroungImg">
-            <img src="../assets/Background.png">
-        </div>
-
-        <p class="textCity">Саранск</p>
-        <div class="container">
-       <img class="startImg" src="../assets/Component0.png" alt="ясно"> <p class="gradus">4°</p>
-        </div>
-       <p class="weather_0">Солнечно</p><br>
-
-       <p class="days">По дням</p><br>
-
+        <!-- до первого комментария я скопировал верхнюю часть как у меня  -->
+        <p class="textCity">Москва</p>
+  <div class="imgGradus">
+    <img class="weatherImgCity" src="../assets/Component0.png" alt="ясно"><p class="gradusCity">5</p><p class="gradus">°</p>
+  </div>
+    <p class="weatherCity">Солнечно</p>
+    <!-- ю -->
         <div class="container_2">
-            <div class="block1">
-                <p>Сегодня</p><br>
+            <div class="countBlock block1">
+                <p class="d1">Сегодня</p><br>
                 <img class="weather_1" src="../assets/Component1.png" alt="ясно"><br>
                 <p>4°</p>
             </div>
-            <div class="block2">
-                <p>Завтра</p><br>
+            <div class="countBlock block2">
+                <p class="d1">Завтра</p><br>
                 <img class="weather_2" src="../assets/Component2.png" alt="облачно"><br>
                 <p>4°</p>
             </div>
-            <div class="block3">
-                <p>Ср 9</p><br>
+            <div class="countBlock block3">
+                <p class="d1">Ср 9</p><br>
                 <img class="weather_3" src="../assets/Component3.png" alt="облачно"><br>
                 <p>4°</p>
             </div>
-            <div class="block4">
-                <p>Чт 10</p><br>
+            <div class="countBlock block4">
+                <p class="d1">Чт 10</p><br>
                 <img class="weather_4" src="../assets/Component4.png" alt="ясно"><br>
                 <p>4°</p>
             </div>
-            <div class="block5">
-                <p>Пт 11</p><br>
+            <div class="countBlock block5">
+                <p class="d1">Пт 11</p><br>
                 <img class="weather_5" src="../assets/Component5.png" alt="ясно"><br>
                 <p>4°</p>
             </div>
-            <div class="block6">
-                <p>Сб 12</p><br>
+            <div class="countBlock block6">
+                <p class="d1">Сб 12</p><br>
                 <img class="weather_6" src="../assets/Component1.png" alt="ясно"><br>
                 <p>4°</p>
             </div>
-            <div class="block7">
-                <p>Вс 13</p><br>
+            <div class="countBlock block7">
+                <p class="d1">Вс 13</p><br>
                 <img class="weather_7" src="../assets/Component5.png" alt="ясно"><br>
                 <p>4°</p>
             </div>
@@ -67,12 +62,12 @@
         <div class="container_4">
             <div class="info_6">Восход
                 <div class="sun_2">
-                    <img class="sunrise" scr="../assets/Frame1.png"><p class="time_1">7:23</p>
+                    <img class="sunrise" src="../assets/Frame1.png"><span class="time_1">7:23</span>
                 </div>
             </div>
             <div class="info_7">Закат
                 <div class="sun_2">
-                    <img class="sunset" scr="../assets/Component0.png"><p class="time_2">18:42</p>
+                    <img class="sunset" src="../assets/Frame2.png"><span class="time_2">18:42</span>
                 </div>
             </div>
         </div>
@@ -92,13 +87,56 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 
-body {
-    margin:0;
-    background-size: cover;
-    background-repeat: no-repeat;
+/* снизу до первого комментария я скопировал как у меня верхнюю часть */
+.textCity {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 24px;
+    position: absolute;
+    top: 10px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px; 
 }
-.backgroundImg {
-    background-size: 100% 100%;
+.imgGradus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 64px;
+  position: absolute;
+    top: -600px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px; 
+}
+.weatherImgCity {
+  margin-right: 10px;
+  height: 70px;
+  width: 70px;
+}
+.gradusCity {
+  font-size: 80px;
+}
+.gradus {
+  font-size: 80px;
+}
+.weatherCity {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 24px;
+    position: absolute;
+    top: 130px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px; 
+}
+/* вот до сюда, можешь изменить прежние названия классов тип ".textCity" и другие */
+body {
+    background-image: url(../assets/Background.png);
+    font-family: 'Roboto';
+  color: rgb(255, 255, 255);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .textCity {
     text-align: center;
@@ -165,104 +203,73 @@ body {
 }
 .container_2 {
     display: flex;
-    padding-left: 30px;
-    padding-right: 30px;
+    margin-left: 64px;
+    margin-right: 64px;
     justify-content: space-between;
     justify-items: flex-start;
-    position: absolute;
-    top: 280px;
-    bottom: 100px;
-    left: 50px;
-    right: 0px;
-
+    flex-wrap: nowrap;
+    height: 170px;
+        position: absolute;
+        top: 280px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
 }
-.block1 {
-    display: inline-block;
-    font-family: 'Roboto';
-    border-radius: 5px;
-    color: white;
-    height: 30%;
-    width: 15%;
-    padding: 0px;
+.countBlock {
     margin: 0px;
+    border-radius: 10px;
+    font-size: 18px;
+    width: 160px;
+    height: 168px;
+}
+.d1 {
+    margin: 0px;
+    padding: 0px;
+}
+.block1 { /*все значения для блоков я переместил в .countBlock */
+
 }
 .weather_1 {
     height: 40px;
     width: 40px;
 }
 .block2 {
-    display:inline-block;
-    font-family: 'Roboto';
-    color: white;
-    height: 30%;
-    width: 15%;
-    padding: 0px;
-    margin: 0px;
+
 }
 .weather_2 {
     height: 40px;
     width: 40px;
 }
 .block3 {
-    display:inline-block;
-    font-family: 'Roboto';
-    color: white;
-    height: 30%;
-    width: 15%;
-    padding: 0px;
-    margin: 0px;
+
 }
 .weather_3 {
     height: 40px;
     width: 40px;
 }
 .block4 {
-    display:inline-block;
-    font-family: 'Roboto';
-    color: white;
-    height: 30%;
-    width: 15%;
-    padding: 0px;
-    margin: 0px;
+
 }
 .weather_4 {
     height: 40px;
     width: 40px;
 }
 .block5 {
-    display:inline-block;
-    font-family: 'Roboto';
-    color: white;
-    height: 30%;
-    width: 15%;
-    padding: 0px;
-    margin: 0px;
+
 }
 .weather_5 {
     height: 40px;
     width: 40px;
 }
 .block6 {
-    display:inline-block;
-    font-family: 'Roboto';
-    color: white;
-    height: 30%;
-    width: 15%;
-    padding: 0px;
-    margin: 0px;
 }
 .weather_6 {
     height: 40px;
     width: 40px;
 }
 .block7 {
-    display:inline-block;
-    font-family: 'Roboto';
-    color: white;
-    height: 30%;
-    width: 15%;
-    padding: 0px;
-    margin: 0px;
+
+
 }
 .weather_7 {
     height: 40px;
@@ -313,7 +320,6 @@ body {
     align-items: flex-start;
     padding: 0px;
     color: white;
-
     position: absolute;
     width: 50px;
     height: 66px;
@@ -339,7 +345,6 @@ body {
     padding: 0px;
     gap: 16px;
     color: white;
-
     position: absolute;
     width: 100px;
     height: 66px;
@@ -365,7 +370,6 @@ body {
     padding: 0px;
     gap: 16px;
     color: white;
-
     position: absolute;
     width: 100px;
     height: 66px;
@@ -427,14 +431,13 @@ body {
     padding: 0px;
     gap: 16px;
     color: white;
-
-    position: absolute;
-    width: 70px;
-    height: 66px;
-    left: 364px;
-    top: 540px;
-    padding:0;
-    margin:0;
+    padding: 0px;
+    margin: 0px;
+        position: absolute;
+        width: 70px;
+        height: 66px;
+        left: 364px;
+        top: 540px;
 }
 .num_5{
     font-family: 'Roboto';
@@ -447,49 +450,39 @@ body {
     margin:0; 
 }
 .container_4 {
-    display: flex; 
-    padding-top: 20px;
-    width: 400px;
-
-}
-.info_6 {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    color: white;
-
-    position: absolute;
-    width: 50px;
+    min-height: 140px;
+    width: 200px;
+    text-align: left;
+    flex-wrap: wrap;
+    margin-left: 64px;
+    margin-bottom: 92px;
+        position: absolute;
+        top: 540px;
+        bottom: 0px;
+        left: 565px;
+        right: 0px;
+}
+.info_6 {  
+    width: 120px;
     height: 70px;
-    left: 700px;
-    top: 540px;
-    padding:0;
-    margin:0;
+    display: flex;
 }
 .sunrise {
-    height: 50px;
-    width: 50px;
-    margin-right: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
 }
 .info_7{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    color: white;
-
-    position: absolute;
-    width: 50px;
+    width: 120px;
     height: 70px;
-    left: 800px;
-    top: 540px;
-    padding:0;
-    margin:0;
+    display: flex;
 }
 .sunset {
-    width: 50px;
-    height: 50px;
-    margin-right: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
 }
 </style>
